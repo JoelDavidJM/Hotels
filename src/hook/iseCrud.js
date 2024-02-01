@@ -11,13 +11,10 @@ const iseCrud = () => {
     const url = `${baseUrl}${path}`
     axios.get(url, getConfigToken())
     .then(res => setRespose(res.data))
-    .catch(err => {
+    .catch(err => 
       console.log(err)
-      if(err.response.status === 403) {
-        localStorage.removeItem('token')
-        localStorage.removeItem('user')
-      }
-    })
+      
+    )
   }
 
   const postApi = (path, data) => {

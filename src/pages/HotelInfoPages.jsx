@@ -19,14 +19,12 @@ const HotelInfoPages = () => {
         getHotel()
     }, [url])
 
-    console.log(hotel);
-
     return (
         <div className="HotelInfoPages__div">
             
             <header className="HotelInfoPages__div__header">
                 <h2 className="HotelInfoPages__div__h2">{hotel?.name}</h2>
-                <span className="HotelInfoPages__div__span">rating</span>
+                <span className="HotelInfoPages__div__span-estrella">⭐⭐⭐⭐⭐</span>
             </header>
             <div className="HotelInfoPages__div-container">
               <div className="HotelInfoPages__div__h2">
@@ -42,12 +40,11 @@ const HotelInfoPages = () => {
                             <ZoomControl />
                             <Marker
                             width={50}
+                            height={50}
                             anchor={[Number(hotel.lat), +hotel.lon]} 
                             color="green"
-                            >
+                            />
 
-                            </Marker>
-                            
                         </Map>
                     )
                 }

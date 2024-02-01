@@ -11,7 +11,6 @@ const ReserveCard = ({reserve, deleteReservation, setReserSelect}) => {
 
    const handleReviews = () => {
     setReserSelect(reserve)
-    setReserSelect(false)
    }
 
    console.log(reserve);

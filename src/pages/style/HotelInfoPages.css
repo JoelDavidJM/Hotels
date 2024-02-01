@@ -15,7 +15,14 @@
     width: 35em;
     margin: 1em;
 }
-
+.HotelInfoPages__div__span-estrella {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 .HotelInfoPages__div__countries {
     text-align: center;
     font-size: 2rem;

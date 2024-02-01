@@ -6,7 +6,7 @@ import FormReviews from '../components/reservationPage/FormReviews'
 
 const ReservationPage = () => {
 
-    const [reserSelect, setReserSelect] = useState(true)
+    const [reserSelect, setReserSelect] = useState()
     
     const [reservation, getReservation, ,deleteReservation] = iseCrud()
 

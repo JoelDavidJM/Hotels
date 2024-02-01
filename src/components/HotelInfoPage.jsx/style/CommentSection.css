@@ -1,0 +1,56 @@
+.CommentSection__div {
+    margin-left: 5em;
+    margin-right: 5em;
+    
+}
+.CommentSection__div__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.CommentSection__div__h2 {
+    text-align: center;
+}
+.CommentSection__div__img {
+    width: 40em;
+    height: 20em;
+    border-radius: 1em;
+}
+.CommentSection__div__County {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.CommentSection__div__h4 {
+    text-align: center;
+}
+.CommentSection__div__estrella {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.estrella {
+    width: 5em;
+    height: 5em;
+}
+.CommentSection__div__comment {
+    margin-bottom: 3em;
+}
+.CommentSection__div__comment__title {
+    font-weight: 800;
+}
+.CommentSection__div__comment__span {
+    margin-left: 0.5em;
+}
+@media screen and (max-width: 700px) {
+    .CommentSection__div__img {
+        width: 20em;
+        height: 20em;
+        border-radius: 1em;
+    }
+}

@@ -26,8 +26,6 @@ const HotelPages = () => {
     dispatch(getHotelThunk(url))
   }, [])
 
-  console.log(fromTo);
-
 const hotelFiltered = hotels?.results.filter(hotelInfo => {
   const filterName = hotelInfo.name.toLowerCase().includes(nameImput)
 
