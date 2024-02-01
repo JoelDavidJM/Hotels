@@ -1,0 +1,81 @@
+import { useParams } from "react-router-dom"
+import useFetch from "../hook/useFetch"
+import { useEffect } from "react"
+import { Map, Marker, Overlay, ZoomControl } from "pigeon-maps"
+import OtherHotels from "../components/HotelInfoPage.jsx/OtherHotels"
+import ReservationHotel from "../components/HotelInfoPage.jsx/ReservationHotel"
+import SliderImag from "../components/HotelInfoPage.jsx/SliderImag"
+import './style/HotelInfoPages.css'
+
+const HotelInfoPages = () => {
+
+    const { id } = useParams()
+
+    const url = `https://hotels-api.academlo.tech/hotels/${id}`
+    const [hotel, getHotel] = useFetch(url)
+
+    useEffect(() => {
+        getHotel()
+    }, [url])
+
+    console.log(hotel);
+
+    return (
+        <div className="HotelInfoPages__div">
+            
+            <header className="HotelInfoPages__div__header">
+                <h2 className="HotelInfoPages__div__h2">{hotel?.name}</h2>
+                <span className="HotelInfoPages__div__span">rating</span>
+            </header>
+            <div className="HotelInfoPages__div-container">
+              <div className="HotelInfoPages__div__h2">
+                <SliderImag
+                hotel={hotel}
+                />
+            </div>
+            <div className="HotelInfoPages__div__map">
+                {
+                    hotel && (
+                        <Map defaultCenter={[Number(hotel.lat), +hotel.lon]}  height={300} zoom={17} >
+
+                            <ZoomControl />
+                            <Marker
+                            width={50}
+                            anchor={[Number(hotel.lat), +hotel.lon]} 
+                            color="green"
+                            >
+
+                            </Marker>
+                            
+                        </Map>
+                    )
+                }
+
+            </div>  
+            </div>
+            <div className="HotelInfoPages__div__container__countries">
+                <div className="HotelInfoPages__div__countries">
+                    <span className="HotelInfoPages__div__span">{hotel?.city.name} </span>
+                    <span className="HotelInfoPages__div__span">{hotel?.city.country}</span>
+                </div>
+                <div className="HotelInfoPages__div__address">
+                    <i className='bx bx-map'></i>
+                    <span className="HotelInfoPages__div__address__information">{hotel?.address}</span>
+                </div>
+                <p className="HotelInfoPages__div__description">{hotel?.description}</p>
+            </div>
+
+                <ReservationHotel
+                hotelId={hotel?.id}
+                />
+
+            <OtherHotels 
+            cityId={hotel?.city.id}
+            hotelId={hotel?.id}
+            />
+
+        </div>
+    )
+}
+
+export default HotelInfoPages

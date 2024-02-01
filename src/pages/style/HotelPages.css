@@ -1,0 +1,35 @@
+.HotelPages-div {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.HotelPages__div__filter {
+    padding: 2em;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 2em;
+    box-shadow: 0 0 1em rgba(204, 95, 45, 0.767);
+    border-radius: 0.5em;
+}
+@media screen and (max-width: 1000px) {
+    .HotelPages-div {
+        display: flex;
+        flex-direction: column;
+    }
+    .HotelPages__div__filter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+        margin-bottom: 2em;
+        margin-left: 4em;
+        margin-right: 4em;
+        height: 50vh;
+        padding: 0;
+        box-shadow: 0 0 1em rgba(204, 95, 45, 0.767);
+        background-color: rgba(219, 153, 108, 0.281);
+    }
+}

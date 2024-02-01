@@ -1,0 +1,27 @@
+.headerShared__header {
+    width: 100%;
+    backdrop-filter: invert(5%);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+.headerShared__header__link__title {
+    text-decoration: none;
+    font-size: 1em;
+    color: rgb(5, 5, 119);
+}
+.headerShared__header__link{
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+}
+.headerShared__header__ul {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.headerShared__header__li {
+    margin: 0.5em;
+}

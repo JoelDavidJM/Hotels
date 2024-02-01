@@ -1,0 +1,99 @@
+.LoginPages__div {
+    margin: 5em auto 0;
+    width: 100%;
+    max-width: 280px;
+    background-color: rgba(241, 238, 238, 0.452);
+    box-shadow: 0 0 20em rgba(0, 0, 0, 0.555);
+    background: url('https://i.gifer.com/V0MO.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.LoginPages__div__img {
+    width: 7em;
+    height: 7em;
+    margin: 0.5em;
+    border-radius: 50%;
+}
+.LoginPages__div__h3 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: white;
+}
+.LoginPages__div__form {
+    top: 10em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    border-radius: 0.3em;
+}
+.LoginPages__div__label {
+    display: flex;
+    flex-direction: column;
+}
+.LoginPages__div__span {
+    margin-bottom: 0.3em;
+    margin-left: 0.5em;
+    margin-top: 1em;
+    color: white;
+}
+.LoginPages__div__input {
+    margin-left: 1em;
+    margin-right: 1em;
+    border: none;
+    background-color: rgba(202, 203, 210, 0.801);
+}
+.LoginPages__div__btn {
+    margin: 0 auto 0;
+    width: 6em;
+    height: 2.5em;
+    background-color: rgba(243, 7, 7, 0.952);
+    border: none;
+    border-radius: 1em;
+    font-weight: 800;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 1em;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.LoginPages__div__logout {
+    background: url('https://i.gifer.com/3N4k.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 88vh;
+   margin-top: 1em;
+   margin-left: 1em;
+   margin-right: 1em;
+}
+
+.LoginPages__div__logout__div {
+    top: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.LoginPages__div__logout__h2 {
+    font-weight: 800;
+}
+.LoginPages__div__logout__btn {
+    margin: 2em;
+    width: 6em;
+    height: 2.5em;
+    background-color: rgba(243, 7, 7, 0.952);
+    border: none;
+    border-radius: 1em;
+    font-weight: 800;
+    color: white;
+    font-size: 1rem;
+    &:hover {
+        transform: scale(1.1);
+    }
+}

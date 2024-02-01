@@ -1,0 +1,26 @@
+.NameFilter__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 2.5em;    
+}
+.NameFilter__form__input {
+    border: none;
+    background-color: rgba(107, 107, 235, 0.452);
+    width: 18em;
+    height: 3em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+.NameFilter__form__btn {
+    border: none;
+    width: 5em;
+    background-color: rgba(255, 81, 0, 0.808);
+    height: 3em;
+    border-end-end-radius: 0.5em;
+    border-start-end-radius: 0.5em;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 0.1rem;
+}

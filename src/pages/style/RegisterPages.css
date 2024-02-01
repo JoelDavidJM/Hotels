@@ -1,0 +1,71 @@
+
+.registerPage__div {
+    background: url('https://i.gifer.com/3xLC.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5em auto 0;
+    width: 100%;
+    max-width: 280px;
+    background-color: rgba(241, 238, 238, 0.452);
+    box-shadow: 0 0 10em rgba(0, 0, 0, 0.555);
+    position: relative;
+}
+.registerPage__div__h2 {
+    font-weight: 800;
+    color: rgba(255, 0, 0, 0.842);
+    text-align: center;
+    margin: 1em;
+}
+.registerPage__div__form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 1.2em;
+    border-radius: 0.3em;
+}
+.registerPage__div__label {
+    display: flex;
+    flex-direction: column;
+}
+.registerPage__div__span {
+    margin-bottom: 0.3em;
+    margin-left: 0.5em;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+.registerPage__div__input {
+    margin-left: 1em;
+    margin-right: 1em;
+    border: none;
+    background-color: rgba(216, 223, 224, 0.835);
+}
+.registerPage__div__select {
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: rgba(216, 223, 224, 0.464);
+    border: none;
+    font-size: 1rem;
+    height: 1.5em;
+    
+}
+.registerPage__div__option {
+    background-color: white;
+    font-weight: 500;
+    color: rgba(109, 105, 105, 0.74);
+}
+.registerPage__div__btn {
+    margin: 0 auto 0;
+    width: 6em;
+    height: 2.5em;
+    background-color: rgba(243, 7, 7, 0.952);
+    border: none;
+    border-radius: 1em;
+    font-weight: 800;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 1em;
+    &:hover {
+        transform: scale(1.1);
+    }
+}

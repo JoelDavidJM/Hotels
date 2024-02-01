@@ -1,0 +1,24 @@
+.CitiesFilter__div__h3 {
+    text-align: center;
+    color: rgb(6, 6, 151);
+    font-weight: 800;
+}
+.CitiesFilter__div__ul {
+    margin-bottom: 0.5em;
+}
+.CitiesFilter__div__li {
+    cursor: pointer;
+    font-weight: 800;
+    margin: 0.5em;
+    &:hover {
+        transform: scale(1.08);
+    }
+}
+.CitiesFilter__div__cities {
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    &:hover {
+        transform: scale(1.08);
+    }
+}

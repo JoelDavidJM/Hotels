@@ -1,0 +1,22 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    gap: 2.5em 2em;
+    margin-left: 3em;
+}
+
+.card-container__div__h2 {
+    font-weight: 800;
+    box-shadow: 0 0 1me black;
+    color: gray;
+    margin: 1em;
+}
+.card-container__div__img {
+    width: 20em;
+    height: 20em;
+    margin: 1em;
+}

@@ -1,0 +1,35 @@
+.ReservationHotel__div__h3{
+    text-align: center;
+}
+.ReservationHotel__div__form {
+    text-align: center;
+    margin: 2em ;
+}
+.ReservationHotel__div__label {
+    margin: 0.5em;
+    
+}
+.ReservationHotel__div__span {
+    font-weight: 800;
+    margin: 1em;
+    font-size: 1.2rem;
+}
+.ReservationHotel__div__input {
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+.ReservationHotel__div__btn {
+     font-size: 1rem;
+     font-weight: 500;
+     border: none;
+     padding: 0.5em 0;
+     width: 8em;
+     background-color: #fa4006;
+     color: white;
+     border-radius: 0.5em;
+     cursor: pointer;
+     transition: transform 100ms ease, box-shadow 100ms ease;
+     &:hover {
+        transform: scale(1.05);
+     }
+}

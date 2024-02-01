@@ -1,0 +1,49 @@
+.HotelInfoPages__div__h2 {
+    text-align: center;
+    margin: 1em;
+    color: rgba(231, 12, 12, 0.842);
+}
+.HotelInfoPages__div-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.HotelInfoPages__div__map {
+    width: 35em;
+    margin: 1em;
+}
+
+.HotelInfoPages__div__countries {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1em;
+    color: rgb(10, 10, 158);
+}
+.HotelInfoPages__div__address{
+    text-align: center;
+    margin: 1em;
+}
+.HotelInfoPages__div__address__information {
+    font-size: 1.5rem;
+    font-weight: 800;
+   
+}
+.bx {
+    font-size: 1.5rem;
+    color: rgb(9, 201, 67);
+    &:hover {
+        opacity: 1;
+        color: blueviolet;
+        transform: scale(1.1);
+    }
+}
+.HotelInfoPages__div__description {
+    text-align: justify;
+    margin: 2em 3em;
+    font-size: larger;
+    color: rgba(29, 28, 28, 0.733);
+}
