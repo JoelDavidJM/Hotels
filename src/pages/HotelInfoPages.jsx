@@ -6,6 +6,7 @@ import OtherHotels from "../components/HotelInfoPage.jsx/OtherHotels"
 import ReservationHotel from "../components/HotelInfoPage.jsx/ReservationHotel"
 import SliderImag from "../components/HotelInfoPage.jsx/SliderImag"
 import './style/HotelInfoPages.css'
+import CommentSection from "../components/HotelInfoPage.jsx/CommentSection"
 
 const HotelInfoPages = () => {
 
@@ -64,10 +65,17 @@ const HotelInfoPages = () => {
                 </div>
                 <p className="HotelInfoPages__div__description">{hotel?.description}</p>
             </div>
-
-                <ReservationHotel
+                <CommentSection
                 hotelId={hotel?.id}
                 />
+                {
+                    localStorage.getItem('token') && (
+                        <ReservationHotel
+                        hotelId={hotel?.id}
+                />
+                    )
+                }
+                
 
             <OtherHotels 
             cityId={hotel?.city.id}

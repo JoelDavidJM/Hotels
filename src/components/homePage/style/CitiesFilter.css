@@ -20,5 +20,6 @@
     margin-bottom: 0.5em;
     &:hover {
         transform: scale(1.08);
+        background-color: rgba(226, 135, 74, 0.808);
     }
 }

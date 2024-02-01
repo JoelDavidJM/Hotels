@@ -11,14 +11,26 @@ const iseCrud = () => {
     const url = `${baseUrl}${path}`
     axios.get(url, getConfigToken())
     .then(res => setRespose(res.data))
-    .catch(err => console.log(err))
+    .catch(err => {
+      console.log(err)
+      if(err.response.status === 403) {
+        localStorage.removeItem('token')
+        localStorage.removeItem('user')
+      }
+    })
   }
 
   const postApi = (path, data) => {
     const url = `${baseUrl}${path}`
     axios.post(url, data, getConfigToken())
     .then(res => console.log(res.data))
-    .catch(err => console.log(err))
+    .catch(err => {
+      console.log(err)
+      if(err.response.status === 403) {
+        localStorage.removeItem('token')
+        localStorage.removeItem('user')
+      }
+    })
   }
 
   const deleteApi = (path, id) => {
@@ -28,14 +40,26 @@ const iseCrud = () => {
       console.log(res.data)
       setRespose(respose.filter(elem => elem.id !== id))
     })
-    .catch(err => console.log(err))
+    .catch(err => {
+      console.log(err)
+      if(err.response.status === 403) {
+        localStorage.removeItem('token')
+        localStorage.removeItem('user')
+      }
+    })
   }
 
   const updateApi = (path, id, data) => {
     const url = `${baseUrl}${path}/${id}`
     axios.patch(url, data, getConfigToken())
     .then(res => console.log(res.data))
-    .catch(err => console.log(err))
+    .catch(err => {
+      console.log(err)
+      if(err.response.status === 403) {
+        localStorage.removeItem('token')
+        localStorage.removeItem('user')
+      }
+    })
   }
   return [respose, getApi, postApi, deleteApi, updateApi]
 }

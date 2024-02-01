@@ -8,6 +8,7 @@ import UnknownPages from './pages/UnknownPages'
 import HotelInfoPages from './pages/HotelInfoPages'
 import HeaderShared from './components/shared/HeaderShared'
 import ReservationPage from './pages/ReservationPage'
+import ProtectecRautes from './pages/ProtectecRautes'
 
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
         <Route path='/reservation' element={<ReservationPage/>}/>
         <Route path='/register' element={<RegisterPages/>}/>
         <Route path='/hotel/:id' element={<HotelInfoPages/>}/>
+        <Route element={<ProtectecRautes/>}>
+
+        </Route>
         <Route path='*' element={<UnknownPages/>}/>
       </Routes>
       

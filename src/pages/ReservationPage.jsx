@@ -1,9 +1,12 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import iseCrud from '../hook/iseCrud'
 import ReserveCard from '../components/reservationPage/ReserveCard'
 import './style/reservationPage.css'
+import FormReviews from '../components/reservationPage/FormReviews'
 
 const ReservationPage = () => {
+
+    const [reserSelect, setReserSelect] = useState(true)
     
     const [reservation, getReservation, ,deleteReservation] = iseCrud()
 
@@ -13,7 +16,18 @@ const ReservationPage = () => {
 
   return (
     <div>
-        <h2 className='Reservation-title'>Reservation</h2>
+        <h2 className='Reservation-title'>Reservations</h2>
+        {
+           reservation?.map(form => (
+            <FormReviews
+            key={form.id}
+            form={form}
+            reserSelect={reserSelect}
+            setReserSelect={setReserSelect}
+            reservation={reservation}
+            />
+           ))
+        }
         <div>
             {
                 reservation?.map(reserve => (
@@ -21,6 +35,7 @@ const ReservationPage = () => {
                     key={reserve.id}
                     reserve={reserve}
                     deleteReservation={deleteReservation}
+                    setReserSelect={setReserSelect}
                     />
                 ))
             }

@@ -1,66 +1,115 @@
 .reserveCard__article {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-    
-}
-.reserveCard__article__img {
-    width: 40vw;
+    gap: 1em;
+    max-width: 930px;
+    width: 100%;
+    height: 8em;
+    background-color: #dddada3d;
+    box-shadow: 0 0.5em 1em rgba(148, 146, 146, 0.644);
+    margin: 0 auto 0;
+    overflow: hidden;
     border-radius: 1em;
     margin-bottom: 2em;
-}
-.reserveCard__article__section {
-    width: 100%;
-    max-width: 300px;
-    background-color: rgba(215, 208, 208, 0.591);
-    border-radius: 1em;
-    box-shadow: 0 0 2em rgb(66, 66, 66);
-    margin: 1em;
-    &:hover{
-        transform: scale(1.02);
+    &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 1.5em rgba(9, 255, 0, 0.26);
     }
 }
+.reserveCard__article__img {
+    width: 10em;
+    height: 8em;
+    border-radius: 1em;
+    overflow: hidden;
+}
+.reserveCard__article__section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: 1.5em;
+}
 .reserveCard__article__h3 {
-    margin: 0.5em;
-    text-align: center;
-    
+    margin-bottom: 0.5em;
+    color: #f10b0bc7;
 }
-.reserveCard__article__div__title {
-    margin: 0.5em;
-    text-align: center;
+.reserveCard__article__div-name {
+    margin-bottom: 0.5em;
+}
+.reserveCard__article__div-route {
+    color: rgb(11, 11, 243);
+    cursor: pointer;
     font-weight: 800;
-    font-size: 1.5rem;
-    color: #062092;
+    &:hover {
+        opacity: 0.8;
+        color: rgb(96, 96, 241);
+        transform: scale(1.01);
+    }
 }
-.reserveCard__article__div {
-    margin: 0.5em;
-    text-align: center;
+.reserveCard__article__div-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 1em;
 }
 .reserveCard__article__div__span {
-    font-weight: 500;
+    font-weight: 800;
+
+}
+.reserveCard__article__div__reserve {
+    color: black;
+}
+.reserveCard__article__div__price {
+    color: black;
 }
 .reserveCard__article__div__price::before {
-    content:  '$' ' ';
-    font-weight: 300;
+    content: 'USD$' ' ' ' ';
+    color: rgba(255, 0, 0, 0.63);
 }
 .reserveCard__article__btn {
-    margin: 1em auto 1em;
-     font-size: 1rem;
-     font-weight: 500;
-     display: block;
-     border: none;
-     padding: 0.5em 0;
-     width: 8em;
-     background-color: #fa4006;
-     color: white;
-     border-radius: 0.5em;
-     cursor: pointer;
-     transition: transform 100ms ease, box-shadow 100ms ease;
-     &:hover {
-        transform: scale(1.05);
-     box-shadow: 0 0 0.5em #0005;
-     }
+    background-color: rgba(255, 0, 0, 0.658);
+    border: none;
+    border-radius: 0.5em;
+    width: 3.5em;
+    height: 3.5em;
+    margin: 0 auto 0;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.bx-trash {
+    color: white;
+    &:hover {
+        opacity: 0.7;
+        color: gold;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .reserveCard__article {
+        display: flex;
+        flex-direction: column;
+    gap: 1em;
+    max-width: 300px;
+    width: 100%;
+    height: 30em;
+    background-color: #dddada3d;
+    box-shadow: 0 0.5em 1em rgba(148, 146, 146, 0.644);
+    margin: 0 auto 0;
+    border-radius: 1em;
+    margin-bottom: 2em;
+    &:hover {
+        transform: scale(1.01);
+    }
+    }
+    .reserveCard__article__img {
+        width: 10em;
+        height: 8em;
+        border-radius: 1em;
+        margin: 1em auto 0;
+    }
+    .reserveCard__article__section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        margin: 1.5em;
+    }
 }
