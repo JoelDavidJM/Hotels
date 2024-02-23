@@ -3,8 +3,7 @@
     width: 100%;
     max-width: 280px;
     background-color: rgba(241, 238, 238, 0.452);
-    box-shadow: 0 0 20em rgba(0, 0, 0, 0.555);
-    background: url('https://i.gifer.com/V0MO.gif');
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.555);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -17,7 +16,7 @@
 .LoginPages__div__h3 {
     font-weight: 800;
     font-size: 2.5rem;
-    color: white;
+    color: rgb(238, 9, 9);
 }
 .LoginPages__div__form {
     top: 10em;
@@ -37,7 +36,7 @@
     margin-bottom: 0.3em;
     margin-left: 0.5em;
     margin-top: 1em;
-    color: white;
+    color: rgb(3, 3, 3);
 }
 .LoginPages__div__input {
     margin-left: 1em;

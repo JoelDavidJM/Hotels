@@ -7,6 +7,10 @@
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(240, 197, 132)
 }
 .headerShared__header__link__title {
     text-decoration: none;
