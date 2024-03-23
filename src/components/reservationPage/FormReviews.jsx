@@ -3,7 +3,7 @@ import iseCrud from "../../hook/iseCrud";
 import './style/formReviews.css'
 import getDaysFromDates from "../../services/getDaysFromDates";
 
-const FormReviews = ({reserSelect, setReserSelect, form}) => {
+const FormReviews = ({reserSelect, setReserSelect}) => {
 
     const formReserve = getDaysFromDates(reserSelect?.checkIn, reserSelect?.checkOut)
 

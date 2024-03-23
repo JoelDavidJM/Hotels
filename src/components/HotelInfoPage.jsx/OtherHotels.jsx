@@ -18,10 +18,10 @@ const OtherHotels = ({cityId, hotelId}) => {
 
   return (
     <div>
-        <h2 className="OtherHotels__div__h2">Other Hotels in <span>{hotels?.results[0].city.name}</span></h2>
+        <h2 className="OtherHotels__div__h2">Other Hotels in <span>{hotels?.[0].city.name}</span></h2>
         <div className="card-container">
             {
-                hotels?.results.filter(hotelInfo => hotelInfo.id !== hotelId).map(hotelInfo => (
+                hotels?.filter(hotelInfo => hotelInfo.id !== hotelId).map(hotelInfo => (
                     <HotelCard
                     key={hotelInfo.id}
                     hotel={hotelInfo}
