@@ -10,6 +10,8 @@ const HotelCard = ({hotel}) => {
         navigate(`/hotel/${hotel.id}`)
     }
 
+    console.log(hotel)
+
   return (
     <article className="card">
         <header className="card__header">
@@ -19,7 +21,7 @@ const HotelCard = ({hotel}) => {
             <h3 className="card__name">{hotel.name}</h3>
             <span className="card__rating">Raiting</span>
             <p className="card__location">{hotel.city.name}, {hotel.city.country}</p>
-            <div className="card__price">{hotel.price}</div>
+            <div className="card__price">{hotel.Price}</div>
          <button className="card__btn" onClick={handleNavigate}>See more...</button>   
         </section>
     </article>

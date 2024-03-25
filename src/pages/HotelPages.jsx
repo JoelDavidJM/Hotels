@@ -22,19 +22,21 @@ const HotelPages = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    const url = 'https://hotels-api.academlo.tech/hotels'
+    const url = 'https://booking-api-tgb4.onrender.com/hotels'
     dispatch(getHotelThunk(url))
+    
   }, [])
 
 const hotelFiltered = hotels?.filter(hotelInfo => {
   const filterName = hotelInfo.name.toLowerCase().includes(nameImput)
 
-  const priceHotel = +hotelInfo.price
+  const priceHotel = +hotelInfo.Price
   const filterPrice = fromTo.from <= priceHotel && priceHotel <= fromTo.to
 
   return filterName && filterPrice
 })
 
+console.log(hotels)
   return (
     <div >
       <NameFilter 

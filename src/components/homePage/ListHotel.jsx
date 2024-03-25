@@ -2,6 +2,7 @@ import HotelCard from "./HotelCard"
 import './style/ListHotel.css'
 
 const ListHotel = ({hotels}) => {
+  console.log(hotels)
   return (
     <div className="card-container">
         {

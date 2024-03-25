@@ -6,7 +6,7 @@ import './style/CitiesFilter.css'
 
 const CitiesFilter = () => {
 
-  const url = 'https://hotels-api.academlo.tech/cities'
+  const url = 'https://booking-api-tgb4.onrender.com/cities'
   const [cities, getCities] = useFetch(url)
 
   useEffect(() => {
@@ -16,9 +16,10 @@ const CitiesFilter = () => {
   const dispatch = useDispatch()
 
   const handleFilterCities = (id) => {
-    let url = 'https://hotels-api.academlo.tech/hotels'
+    let url = 'https://booking-api-tgb4.onrender.com/hotels'
+    console.log(url)
     if(id !== 'all cities') {
-       url = `https://hotels-api.academlo.tech/hotels?cityId=${id}`
+       url = `https://booking-api-tgb4.onrender.com/hotels?cityId=${id}`
     }
     dispatch(getHotelThunk(url))
   }

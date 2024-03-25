@@ -12,12 +12,14 @@ const HotelInfoPages = () => {
 
     const { id } = useParams()
 
-    const url = `https://hotels-api.academlo.tech/hotels/${id}`
+    const url = `https://booking-api-tgb4.onrender.com/hotels/${id}`
     const [hotel, getHotel] = useFetch(url)
 
     useEffect(() => {
         getHotel()
     }, [url])
+
+console.log(hotel)
 
     return (
         <div className="HotelInfoPages__div">
@@ -53,12 +55,12 @@ const HotelInfoPages = () => {
             </div>
             <div className="HotelInfoPages__div__container__countries">
                 <div className="HotelInfoPages__div__countries">
-                    <span className="HotelInfoPages__div__span">{hotel?.city.name} </span>
-                    <span className="HotelInfoPages__div__span">{hotel?.city.country}</span>
+                    <span className="HotelInfoPages__div__span">{hotel?.name} </span>
+                    <span className="HotelInfoPages__div__span">{hotel?.country}</span>
                 </div>
                 <div className="HotelInfoPages__div__address">
                     <i className='bx bx-map'></i>
-                    <span className="HotelInfoPages__div__address__information">{hotel?.address}</span>
+                    <span className="HotelInfoPages__div__address__information">{hotel?.Address}</span>
                 </div>
                 <p className="HotelInfoPages__div__description">{hotel?.description}</p>
             </div>
@@ -75,7 +77,7 @@ const HotelInfoPages = () => {
                 
 
             <OtherHotels 
-            cityId={hotel?.city.id}
+            cityId={hotel?.id}
             hotelId={hotel?.id}
             />
 

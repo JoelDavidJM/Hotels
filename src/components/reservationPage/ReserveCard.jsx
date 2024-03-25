@@ -28,7 +28,7 @@ const ReserveCard = ({reserve, deleteReservation, setReserSelect}) => {
       </div>
       <div>
         <div className="reserveCard__article__div-info" ><span className="reserveCard__article__div__span">Reservation days:</span> <span className="reserveCard__article__div__reserve">{reservationDays}</span></div>
-          <div className="reserveCard__article__div-info" ><span className="reserveCard__article__div__span">Subtotal Price: </span> <span  className="reserveCard__article__div__price">{Number(reserve.hotel.price) * reservationDays}</span> </div>
+          <div className="reserveCard__article__div-info" ><span className="reserveCard__article__div__span">Subtotal Price: </span> <span  className="reserveCard__article__div__price">{Number(reserve.hotel.Price) * reservationDays}</span> </div>
           
       </div>
       <button className="reserveCard__article__btn" onClick={handleDelete}><i className='bx bx-trash'></i></button>
