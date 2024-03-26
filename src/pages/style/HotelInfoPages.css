@@ -2,6 +2,7 @@
     text-align: center;
     margin: 1em;
     color: rgba(231, 12, 12, 0.842);
+    margin-top: 3em;
 }
 .HotelInfoPages__div-container {
     display: flex;

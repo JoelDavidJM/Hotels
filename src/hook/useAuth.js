@@ -3,14 +3,14 @@ import axios from "axios"
 const useAuth = () => {
   
     const createNewUser = data => {
-        const url = 'https://booking-api-tgb4.onrender.com/users'
+        const url = 'http://localhost:8080/users'
         axios.post(url, data)
         .then(res => console.log(res.data))
         .catch(err => console.log(err))
     }
 
     const loginUser = data => {
-        const url = 'https://booking-api-tgb4.onrender.com/users/login'
+        const url = 'http://localhost:8080/users/login'
         axios.post(url, data)
         .then(res => {
             console.log(res.data)

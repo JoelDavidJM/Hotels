@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import useFetch from "../hook/useFetch"
 import { useEffect } from "react"
-import { Map, Marker, Overlay, ZoomControl } from "pigeon-maps"
+import { Map, Marker, ZoomControl } from "pigeon-maps"
 import OtherHotels from "../components/HotelInfoPage.jsx/OtherHotels"
 import ReservationHotel from "../components/HotelInfoPage.jsx/ReservationHotel"
 import SliderImag from "../components/HotelInfoPage.jsx/SliderImag"
@@ -12,7 +12,7 @@ const HotelInfoPages = () => {
 
     const { id } = useParams()
 
-    const url = `https://booking-api-tgb4.onrender.com/hotels/${id}`
+    const url = `http://localhost:8080/hotels/${id}`
     const [hotel, getHotel] = useFetch(url)
 
     useEffect(() => {
