@@ -22,7 +22,7 @@ const HotelPages = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    const url = 'http://localhost:8080/hotels'
+    const url = 'https://booking-hotel-api-gkqe.onrender.com/hotels'
     dispatch(getHotelThunk(url))
     
   }, [])
